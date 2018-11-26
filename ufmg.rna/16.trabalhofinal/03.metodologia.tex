@@ -1,0 +1,75 @@
+Para avaliar as duas funções a seguinte metodologia foi utilizada:
+
+\begin{enumerate}
+	\item $85\%$ dos dados disponíveis foram utilizados para treinar a rede;
+	\item Após o treinamento, os $15\%$ dos dados restantes foram avaliados pela rede neural criada;
+	\item A confusion matrix dos resultados avaliados foi calculada;
+	\item O índice de acertividade foi calculado segundo a fórmula:
+	$$ \text{índice acertividade} = \frac{\text{soma diagonal principal}}{\text{soma toda matriz}} $$
+	\item Os passos 1 a 4 foram repetidos 10 vezes para cada método e cada base de dados;
+	\item A média do índice de acertividade foi então calculada.
+\end{enumerate}
+
+Para executar os redes foi utilizado o método \texttt{mlp} do pacote \texttt{RSNNS}. Nesse método o parâmetro \texttt{size} diz respeito à quantidade de neurônios na rede neural. O parâmetro \texttt{learnFuncParams} define paramêtros para as funções de aprendizado. E o parâmetro \texttt{maxtit} define a quantidade máxima de épocas para a etapa de aprendizagem \cite{bib-rsnns}.
+
+As bases de dados utilizadas estão apresentadas a seguir.
+
+\subsection{Iris}
+
+O primeiro problema estudado foi o \emph{Iris} \cite{bib-iris}.
+
+\begin{itemize}	
+	\item \textbf{Número de instâncias}: 150
+	\item \textbf{Número de atributos}: 4
+	\item \textbf{Número de classes}: 3
+\end{itemize}
+
+Essa é uma base de dados muito conhecida no ramo de Redes Neurais Artificias. Ela avalia dimensões físicas de espécimes de três classes de plantas iris: Iris Setosa, Iris Versicolour e Iris Virginica.
+
+\subsection{Letter Recognition}
+
+O segundo problema estudado foi o \emph{Letter Recognition} \cite{bib-letter-recognition}.
+
+\begin{itemize}	
+	\item \textbf{Número de instâncias}: 20000
+	\item \textbf{Número de atributos}: 16
+	\item \textbf{Número de classes}: 26
+\end{itemize}
+
+Nesse problema as 26 letras do alfabeto inglês são identifacadas em imagens preto e branco de onde foram extraídos 16 atributos numéricos.
+
+\subsection{Wine}
+
+O terceiro problema estudado foi o \emph{Wine} \cite{bib-wine}.
+
+\begin{itemize}	
+	\item \textbf{Número de instâncias}: 178
+	\item \textbf{Número de atributos}: 13
+	\item \textbf{Número de classes}: 3
+\end{itemize}
+
+Nesse problema resultados de analíses químicias são usados para determinar a origem de vinhos.
+
+\subsection{Tic Tac Toe}
+
+O quarto problema estudado foi o \emph{Tic Tac Toe} \cite{bib-tic-tac-toe}.
+
+\begin{itemize}	
+	\item \textbf{Número de instâncias}: 958
+	\item \textbf{Número de atributos}: 9	
+	\item \textbf{Número de classes}: 2
+\end{itemize}
+
+Nesse problema, todas as possibilidade de um tabuleiro do \emph{Jogo da Velha} onde $x$ começou são mostradas e classificadas quanto à possibilidade do $x$ vencer ou não.
+
+\subsection{Balance Scale}
+
+O quinto problema estudado foi o \emph{Balance Scale} \cite{bib-balance-scale}.
+
+\begin{itemize}	
+	\item \textbf{Número de instâncias}: 625
+	\item \textbf{Número de atributos}: 4
+	\item \textbf{Número de classes}: 3
+\end{itemize}
+
+Nesse problema um modelo físico de uma balança é avaliado. Na balança há dois diferentes pesos em diferentes distâncias do centro. Em cada configuração a balança pode estar pendendo para a esquerda, ou para a direita ou equilibrada. 

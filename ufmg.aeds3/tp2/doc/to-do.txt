@@ -1,0 +1,5 @@
+- modelar o problema utilizando teoria dos grafos
+- provar que o problema a ser resolvido pode ser modelado como um problema de decisão
+- versão de decisão é um problema NP-Completo
+- implementar um algoritmo exato
+- implementar uma heurística para o problema

@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\title{Aulas de Redes Neurais - 2018/1}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Aula 09/03/2018}
+
+<<echo=T,fig=T>>=
+rm(list=ls())
+
+beta<-1
+h<-2
+u<-seq(0,10,0.1)
+fu<-(sign(u-5)+1)/2
+fus<-1/(1+exp(-beta*(u-5)))
+fug<-exp(-((u-5)^2)/h^2)
+
+plot(u,fu,type='l',xlim=c(0,10),ylim=c(0,1))
+par(new=T)
+plot(u,fus,type='l',col='green',xlim=c(0,10),ylim=c(0,1))
+par(new=T)
+plot(u,fug,type='l',col='red',xlim=c(0,10),ylim=c(0,1))
+
+@
+
+\end{document}

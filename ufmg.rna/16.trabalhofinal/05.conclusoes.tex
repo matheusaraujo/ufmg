@@ -1,0 +1,19 @@
+A Tabela \ref{tabela-indices-acertividade} apresenta os índices de acertividade médios de todas as execuções. 
+
+Nela é possível perceber que o Backpropagation Padrão teve melhores resultados em duas das bases de dados, enquanto o Backpropagation SCG teve melhor desempenho nas outras três. Na média, a função SCG tem um melhor desempenho em comparação com o Backpropagation Padrão. Nos experimentos realizado, há uma melhora de cerca de $1,13\%$.
+
+\begin{table}[h!]
+\centering
+\caption{Índices de acertividade}
+\label{tabela-indices-acertividade}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Base de Dados} & \textbf{Padrão} & \textbf{SCG} & \textbf{Comparação} \\ \midrule
+Iris                   & 0.9609                          & 0.9739 & 1.0135                       \\
+Letter Recognition     & 0.7391                          & 0.7262 & 0.9825                      \\
+Wine                   & 0.9630                          & 0.9593 & 0.9962                       \\
+Tic Tac Toe            & 0.7833                          & 0.7868 & 1.0045                       \\
+Balance Scale          & 0.8713                          & 0.9234 & 1.0598                       \\ \bottomrule
+\textbf{Média}		   & \textbf{0.8635}							 & \textbf{0.8739} & \textbf{1.0113}
+\end{tabular}
+\end{table}

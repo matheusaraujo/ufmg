@@ -1,0 +1,103 @@
+\subsection{Wine}
+
+\subsubsection{Backpropagation padrão}
+
+O backpropagation padrão foi executado para a base de dados Wine com os seguintes parâmetros:
+
+\begin{itemize}
+	\item \texttt{size}: 5
+	\item \texttt{learnFuncParams}: 0.1
+	\item \texttt{maxit}: 50
+\end{itemize}
+
+A confusion matrix de uma execução é apresentada na Figura \ref{figura-confusion-matrix-wine-backpropagation-padrao}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.3\linewidth]{figs/confusion-matrix-wine-backpropagation-padrao.png}
+  \caption{Confusion Matrix - Wine - Backpropagation padrão}
+  \label{figura-confusion-matrix-wine-backpropagation-padrao}
+\end{figure}
+
+Os resultados para as 10 execuções do backpropagation padrão com as taxas de acertividade são apresentados na Tabela \ref{tabela-resultado-wine-backpropagation-padrao}. A média de acertividade foi de $0.9630$, com desvio padrão de $0.0349$.
+
+\begin{table}[h!]
+\centering
+\caption{Resultados - Wine - Backpropagation padrão}
+\label{tabela-resultado-wine-backpropagation-padrao}
+\begin{tabular}{ll}
+\toprule
+                       & \textbf{Acertividade}       \\ \midrule
+Execução 1             & 1.0000          \\
+Execução 2             & 0.9630          \\
+Execução 3             & 0.9630          \\
+Execução 4             & 0.9630           \\
+Execução 5             & 0.9630          \\
+Execução 6             & 1.0000           \\
+Execução 7             & 0.9259           \\
+Execução 8             & 0.9630          \\
+Execução 9             & 0.8889           \\
+Execução 10            & 1.0000           \\ \bottomrule
+\textbf{Média}         & \textbf{0.9630} \\
+\textbf{Desvio Padrão} & \textbf{0.0349}
+\end{tabular}
+\end{table}
+
+%O erro iterativo é apresentado na Figura \ref{figura-erro-iterativo-wine-backpropagation-padrao}.
+%
+%\begin{figure}
+%  \includegraphics[width=\linewidth]{figs/erro-iterativo-wine-backpropagation-padrao.png}
+%  \caption{Erro iterativo - Wine - Backpropagation padrão}
+%  \label{figura-erro-iterativo-wine-backpropagation-padrao}
+%\end{figure}
+
+\subsubsection{SCG}
+
+O backpropagation com função de aprendizado SCG foi executado para a base de dados Wine com os seguintes parâmetros:
+
+\begin{itemize}
+	\item \texttt{size}: 5
+	\item \texttt{learnFuncParams}: (0, 0, 0, 0)
+	\item \texttt{maxit}: 50
+\end{itemize}
+
+A confusion matrix de uma execução é apresentada na Figura \ref{figura-confusion-matrix-wine-backpropagation-scg}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.3\linewidth]{figs/confusion-matrix-wine-backpropagation-scg.png}
+  \caption{Confusion Matrix - Wine - Backpropagation SCG}
+  \label{figura-confusion-matrix-wine-backpropagation-scg}
+\end{figure}
+
+Os resultados para as 10 execuções do backpropagation SCG com as taxas de acertividade são apresentados na Tabela \ref{tabela-resultado-wine-scg}. A média de acertividade foi de $0.9593$, com desvio padrão de $0.0273$.
+
+\begin{table}[h!]
+\centering
+\caption{Resultados - Wine - Backpropagation SCG}
+\label{tabela-resultado-wine-scg}
+\begin{tabular}{ll}
+\toprule
+                       & \textbf{Acertividade}       \\ \midrule
+Execução 1             & 1.0000          \\
+Execução 2             & 0.9630          \\
+Execução 3             & 0.9630           \\
+Execução 4             & 0.9630          \\
+Execução 5             & 0.9259           \\
+Execução 6             & 0.9630          \\
+Execução 7             & 0.9259           \\
+Execução 8             & 0.9630           \\
+Execução 9             & 0.9259          \\
+Execução 10            & 1.0000          \\ \bottomrule
+\textbf{Média}         & \textbf{0.9593} \\
+\textbf{Desvio Padrão} & \textbf{0.0273}
+\end{tabular}
+\end{table}
+
+%O erro iterativo é apresentado na Figura \ref{figura-erro-iterativo-wine-backpropagation-scg}.
+%
+%\begin{figure}
+%  \includegraphics[width=\linewidth]{figs/erro-iterativo-wine-backpropagation-scg.png}
+%  \caption{Erro iterativo - Wine - Backpropagation SCG}
+%  \label{figura-erro-iterativo-wine-backpropagation-scg}
+%\end{figure}

@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\section{Aula 3 - 16/03/2018}
+
+<<echo=T, fig=F>>=
+
+rm(list = ls())
+library('corpcor') #pacote para calculo da pseudoinversa
+fgx<-function(xin) 0.5*xin^2+3*xin+10
+X<-runif(n=10,min=-15,max=10) #amostra x
+Y<-fgx(X) + 10*rnorm(length(X))
+
+xrange<-seq(-15,10,0.5)
+yrange<-fgx(xrange)
+
+plot(X,Y,col='red',xlim=c(-15,10),ylim=c(0,80))
+par(new=T)
+plot(xrange,yrange,type='l',col='blue',xlim=c(-15,10),ylim=c(0,80))
+
+#H<-cbind(X^5,X^4,X^3,X^2,X,1)
+H<-cbind(X^2,X,1)
+w<-pseudoinverse(H) %*% Y
+
+print(cbind(w,c(0.5,3,10)))
+
+#Hrange<-cbind(xrange^5,xrange^4,xrange^3,xrange^2,xrange,1)
+Hrange<-cbind(xrange^2,xrange,1)
+yhatrange<-Hrange %*% w
+
+par(new=T)
+plot(xrange,yhatrange,type='l',col='black',xlim=c(-15,10),ylim=c(0,80))
+
+@
+
+
+\end{document}

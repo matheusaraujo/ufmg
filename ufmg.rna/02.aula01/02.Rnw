@@ -1,0 +1,44 @@
+\documentclass{article}
+
+\title{Aulas de Redes Neurais - 2018/1}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Aula 09/03/2018}
+
+<<echo=T,fig=T>>=
+rm(list=ls())
+
+# parametro da gaussiana
+r1<-1.20
+r2<-1.20
+
+# centro da gaussiana
+m1<-pi/2
+m2<-3*pi/2
+
+# pesos
+w1<-1
+w2<--1
+
+# entradas
+u<-seq(0,2*pi,0.01)
+
+# funcoes intermediarias
+h1<-exp(-((u-m1)^2)/r1^2)
+h2<-exp(-((u-m2)^2)/r2^2)
+
+fg<-sin(u)
+
+yhat<-h1*w1+h2*w2
+
+plot(u,fg,type='l',col='black',xlim=c(0,2*pi),ylim=c(-1,1))
+par(new=T)
+plot(u,yhat,type='l',col='red',xlim=c(0,2*pi),ylim=c(-1,1))
+
+@
+
+\end{document}

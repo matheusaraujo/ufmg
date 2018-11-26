@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{02-concordance}
+
+\section{Aula 3 - 16/03/2018}
+
+\begin{Schunk}
+\begin{Sinput}
+> rm(list = ls())
+> library("corpcor") #pacote para calculo da pseudoinversa
+> fgx<-function(xin) 0.5*xin^2+3*xin+10
+> X<-runif(n=20,min=-15,max=10) #amostra x
+> Y<-fgx(X) + 10*rnorm(length(X))
+> plot(X,Y)
+> H<-cbind(X^2,X,1)
+> w<-pseudoinverse(H) %*% Y
+> 
+\end{Sinput}
+\end{Schunk}
+
+
+\end{document}

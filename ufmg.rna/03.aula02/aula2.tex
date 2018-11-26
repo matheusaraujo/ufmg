@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{aula03-concordance}
+
+\section{Aula 3 - 16/03/2018}
+
+\begin{Schunk}
+\begin{Sinput}
+> rm(list = ls())
+> fsigmoide<-function(u){
++   1/(1+exp(-2*(u)))
++ }
+> n<-5
+> N<-20
+> m<-4
+> X<-matrix(runif(n*N),nrow=N,ncol=n)
+> Y<-matrix(runif(m*N),nrow=N,ncol=m)
+> Xaug<-cbind(X,1)
+> p<-15
+> Z<-matrix(runif(n*p),nrow=n,ncol=p)
+> U1<-X %*% Z
+> H<-fsigmoide(U1)
+> W<-matrix(runif(m*p),nrow=p,ncol=m)
+> U2<-H %*% W
+> Yhat<-fsigmoide(U2)
+> 
+\end{Sinput}
+\end{Schunk}
+
+\end{document}

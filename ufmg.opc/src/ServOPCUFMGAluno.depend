@@ -1,0 +1,237 @@
+# depslib dependency file v1.0
+1502932476 source:c:\usersmeu\carlos\winc\opc_foundation\wintech\servopcufmgaluno\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+	<opcda.h>
+	"opc_ae.h"
+	"opcerror.h"
+	"wtopcsvrapi.h"
+	"WtclientAPIex.h"
+
+1446664144 c:\usersmeu\carlos\winc\opc_foundation\wintech\servopcufmgaluno\resource.h
+
+919097750 c:\usersmeu\carlos\winc\opc_foundation\wintech\include\opcda.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+
+952699914 c:\usersmeu\carlos\winc\opc_foundation\wintech\include\opc_ae.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+	"ocidl.h"
+
+964995790 c:\usersmeu\carlos\winc\opc_foundation\wintech\include\opcerror.h
+
+1040569134 c:\usersmeu\carlos\winc\opc_foundation\wintech\include\wtopcsvrapi.h
+
+1033731916 c:\usersmeu\carlos\winc\opc_foundation\wintech\include\wtclientapiex.h
+
+1502932037 source:c:\usersmeu\carlos\winc\opc_foundation\wintech\servopcufmgaluno\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1503061032 source:d:\usuarios\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\acessoarduino\wintech\servopcufmgaluno\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+	<time.h>
+	<opcda.h>
+	"opc_ae.h"
+	"opcerror.h"
+	"wtopcsvrapi.h"
+	"WtOPCsvrEXTapi.h"
+
+1446664144 d:\usuarios\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\acessoarduino\wintech\servopcufmgaluno\resource.h
+
+919097750 e:\carlos\winc\opc_foundation\wintech\include\opcda.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+
+952699914 e:\carlos\winc\opc_foundation\wintech\include\opc_ae.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+	"ocidl.h"
+
+964995790 e:\carlos\winc\opc_foundation\wintech\include\opcerror.h
+
+1068321534 e:\carlos\winc\opc_foundation\wintech\include\wtopcsvrapi.h
+
+1041774882 e:\carlos\winc\opc_foundation\wintech\include\wtopcsvrextapi.h
+
+1502932037 source:d:\usuarios\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\acessoarduino\wintech\servopcufmgaluno\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1503974680 source:d:\usuarios\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\servopcufmgaluno\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+	<time.h>
+	<opcda.h>
+	"opc_ae.h"
+	"opcerror.h"
+	"wtopcsvrapi.h"
+	"WtOPCsvrEXTapi.h"
+
+1503970542 d:\usuarios\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\servopcufmgaluno\resource.h
+
+1503970539 source:d:\usuarios\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\servopcufmgaluno\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1504012830 source:e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\servopcufmgaluno\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+	<time.h>
+	<opcda.h>
+	"opc_ae.h"
+	"opcerror.h"
+	"wtopcsvrapi.h"
+	"WtOPCsvrEXTapi.h"
+
+1503970542 e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\servopcufmgaluno\resource.h
+
+919101350 e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\include\opcda.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+
+952699914 e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\include\opc_ae.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+	"ocidl.h"
+
+964995790 e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\include\opcerror.h
+
+1040572734 e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\include\wtopcsvrapi.h
+
+1040578680 e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\include\wtopcsvrextapi.h
+
+1504012974 source:e:\carlos\ufmg-concurso\trabvolun\disciplina\opc\trabalho\wintech\servopcufmgaluno\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1542403664 source:c:\users\mathe\desktop\opc\v4\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+	<time.h>
+	<opcda.h>
+	"opc_ae.h"
+	"opcerror.h"
+	"wtopcsvrapi.h"
+	"WtOPCsvrEXTapi.h"
+
+1503974142 c:\users\mathe\desktop\opc\v4\resource.h
+
+919104950 c:\users\mathe\desktop\opc\include\opcda.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+
+952703514 c:\users\mathe\desktop\opc\include\opc_ae.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+	"ocidl.h"
+
+964999390 c:\users\mathe\desktop\opc\include\opcerror.h
+
+1040576334 c:\users\mathe\desktop\opc\include\wtopcsvrapi.h
+
+1040582280 c:\users\mathe\desktop\opc\include\wtopcsvrextapi.h
+
+1504016574 source:c:\users\mathe\desktop\opc\v4\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1504016574 source:c:\users\mathe\github\ufmg.opc\src\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1542481203 c:\users\mathe\github\ufmg.opc\src\resource.h
+
+1542577272 source:c:\users\mathe\github\ufmg.opc\src\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+	<time.h>
+	<iostream>
+	<fstream>
+	<math.h>
+	<opcda.h>
+	"opc_ae.h"
+	"opcerror.h"
+	"wtopcsvrapi.h"
+	"WtOPCsvrEXTapi.h"
+	"SerialPort.h"
+
+919104950 c:\users\mathe\github\ufmg.opc\include\opcda.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+
+952703514 c:\users\mathe\github\ufmg.opc\include\opc_ae.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"oaidl.h"
+	"ocidl.h"
+
+964999390 c:\users\mathe\github\ufmg.opc\include\opcerror.h
+
+1040576334 c:\users\mathe\github\ufmg.opc\include\wtopcsvrapi.h
+
+1040582280 c:\users\mathe\github\ufmg.opc\include\wtopcsvrextapi.h
+
+1542483278 source:c:\users\mathe\github\ufmg.opc\src\serialport.cpp
+	"SerialPort.h"
+
+1542483294 c:\users\mathe\github\ufmg.opc\src\serialport.h
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
