@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+	<version>1.0</version>
+	<configs>
+		<config default="false" name="Configuration1" category="opl">
+			<ref name="Model.mod" type="model">
+			</ref>
+			<ref name="Data1.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="Configuration2" category="opl">
+			<ref name="Model.mod" type="model">
+			</ref>
+			<ref name="Data2.dat" type="data">
+			</ref>
+		</config>
+		<config default="true" name="Configuration3" category="opl">
+			<ref name="Model.mod" type="model">
+			</ref>
+			<ref name="Data3.dat" type="data">
+			</ref>
+		</config>
+	</configs>
+	
+</project>
