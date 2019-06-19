@@ -13,10 +13,22 @@
 			<ref name="Data2.dat" type="data">
 			</ref>
 		</config>
-		<config default="true" name="Configuration3" category="opl">
+		<config default="false" name="Configuration3" category="opl">
 			<ref name="Model.mod" type="model">
 			</ref>
 			<ref name="Data3.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="Configuration5" category="opl">
+			<ref name="Model.mod" type="model">
+			</ref>
+			<ref name="Data5.dat" type="data">
+			</ref>
+		</config>
+		<config default="true" name="Configuration4" category="opl">
+			<ref name="Data4.dat" type="data">
+			</ref>
+			<ref name="Model.mod" type="model">
 			</ref>
 		</config>
 	</configs>
