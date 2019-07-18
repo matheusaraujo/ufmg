@@ -1,0 +1,19 @@
+digraph G {
+    
+    node [shape = box];
+    
+    E1 [label = "Usuário está no exterior do PMFA"];
+    E2 [label = "Usuário entrou na antesala", color = blue];
+    E3 [label = "Usuário recebeu a senha", color = blue];
+    E4 [label = "Usuário está na sala secreta", color = red];
+    E5 [label = "Sala secreta está habitável", color = red];
+    
+    E1 -> E2 [label = "Usuário digitou\na senha correta"];
+    E2 -> E3 [label = "Sistema gerou\ne enviou a senha"];
+    E3 -> E4 [label = "Usuário digitou\na senha correta"];
+    E4 -> E5 [label = "Subsistema de ventilação é ligado", dir = none, style = dashed];
+    
+    E4 -> E2 [label = "Usuário apertou o\nbotão para abrir a porta"];
+    E2 -> E1 [label = "Usuário apertou o\nbotão para abrir a porta"];
+    
+}

@@ -1,0 +1,10 @@
+.vpprefdata/
+*.vpp~*
+*.vpp.working
+*.vpp.working-journal
+*.lock
+*.bak*
+tmp/*
+*.vpp.lck
+
+*.pyc

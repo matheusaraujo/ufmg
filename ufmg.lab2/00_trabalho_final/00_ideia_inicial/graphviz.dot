@@ -1,0 +1,26 @@
+digraph G {
+    
+    rankdir = LR;
+    
+    node [shape = circle];
+    
+    estado_inicial [label = "Estado\nInicial\nSL-TA"];
+    objeto_detectado [label = "Objeto\ndetectado\nSL-TF"];
+    objeto_em_analise [label = "Objeto em\nAnálise\nSD-TF"];
+    objeto_bloqueado [label = "Objeto\nbloqueado\nSD-TF"];
+    sistema_em_pausa [label = "Sistema\nem pausa\nSD-TA"];
+    
+    estado_inicial -> objeto_detectado [label = "Sensor\ndisparado"];
+    objeto_detectado -> objeto_em_analise [label = "Envio\nda foto"];
+    objeto_em_analise -> sistema_em_pausa [label = "Foto\nliberada", color = blue];
+    objeto_em_analise -> objeto_bloqueado [label = "Foto\nbloqueada", color = blue];
+    
+    sistema_em_pausa -> estado_inicial [label = "Aguarda\num tempo"];
+    
+    objeto_detectado -> estado_inicial [label = "Desbloqueio\nmanual", color = red];
+    objeto_em_analise -> estado_inicial [label = "Desbloqueio\nmanual", color = red];
+    objeto_bloqueado -> estado_inicial [label = "Desbloqueio\nmanual", color = red];
+    sistema_em_pausa -> estado_inicial [label = "Desbloqueio\nmanual", color = red];
+    
+  
+}

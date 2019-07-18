@@ -1,0 +1,7 @@
+- Valida a senha externa
+- Abre a porta externa
+- Envia a senha interna
+- Valida a senha interna
+- Aciona o sistema de iluminação e ventilação
+- Abre a porta interna
+- Desliga o sistema de iluminação e ventilação

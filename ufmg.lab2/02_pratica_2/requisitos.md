@@ -1,0 +1,40 @@
+# pmfa #
+## physical multifactor authenticaion ##
+
+- **requisitos funcionais**
+  - o sistema deve validar a senha externa, estática
+    - a senha deve ter 4 caracteres numéricos
+  - o sistema deve abrir a porta externa, caso a senha seja válida
+  - o sistema deve gerar a senha interna
+    - a senha deve ter 4 caracteres numéricos
+  - o sistema deve enviar a senha interna para o usuário (via email)
+  - o sistema deve validar a senha interna, dinâmica
+  - o sistema deve iniciar o subsistema de ventilação e iluminação, caso a senha seja válida
+  - o sistema deve abrir a porta interna após o clique no botão interno, caso as duas estejam fechadas
+  - o sistema deve abrir a porta externa após o clique no botão externo, caso as duas estejam fechadas
+- **requisitos de interface**
+  - numerics pads
+  - travas
+  - botões
+  - ventilação
+  - iluminação
+- **requisitos de performance**
+  - uma vez que o sinal seja ativado, a tranca deve ser aberta em 1s
+  - o num pad deve permitir a digitação em velocidade usual, 2 teclas por segundo
+  - o email deve ser enviado em até 1 minuto
+- **requisitos de qualidade**
+  - o sistema deve tolerar no máximo uma falha a cada 50 utilizações
+- **estados e modos**
+- **ambiente**
+  - a sala interna deve ser mantida à temperatura ambiente padrão
+  - deve haver renovação de ar no ...
+- **recurso**
+  - as travas devem ser alimentadas com 12V
+  - os teclados numéricos devem ter as teclas entre 0 e 9 e um botão de entrada
+  - o controlador deve ter conexão com a internet contínua de pelo menos 56mbps
+  - o controlador deve ser capaz de gerar uma senha aleatória de 4 dígitos
+  - o controlador deve ser capaz de armazenar duas senhas de 4 dígitos
+- **físicos**
+  - o sistema não pode sofrer interferência eletromagnética
+  - o sistema deve ser resistente a danos físicos
+  - o sistema deve possuir geração de energia ininterrupta de 12V
