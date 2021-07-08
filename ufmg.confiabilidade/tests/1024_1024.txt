@@ -1,0 +1,89 @@
+16:27:08 INFO: Taurus CLI Tool v1.15.2
+16:27:08 INFO: Starting with configs: ['basic_test.yml']
+16:27:08 INFO: Configuring...
+16:27:08 INFO: Artifacts dir: C:\ufmg\performance-test\tests\2021-03-21_16-27-08.697505
+16:27:08 INFO: Preparing...
+16:27:16 WARNING: Thread group detection: plugin for ConcurrentThreadGroup not found, regular ThreadGroup will be used
+16:27:16 WARNING: Failed to detect plugins for C:\ufmg\performance-test\tests\2021-03-21_16-27-08.697505\modified_requests.jmx: [WinError 2] O sistema não pode encontrar o arquivo especificado
+16:27:16 INFO: Starting...
+16:27:16 INFO: Waiting for results...
+16:27:29 INFO: Changed data analysis delay to 4s
+16:27:32 INFO: Current: 1 vu	1 succ	0 fail	2.142 avg rt	/	Cumulative: 1.573 avg rt, 0% failures
+16:27:34 INFO: Current: 1 vu	1 succ	0 fail	0.761 avg rt	/	Cumulative: 1.303 avg rt, 0% failures
+16:27:35 INFO: Current: 1 vu	1 succ	0 fail	0.650 avg rt	/	Cumulative: 1.139 avg rt, 0% failures
+16:27:37 INFO: Current: 1 vu	1 succ	0 fail	0.813 avg rt	/	Cumulative: 0.928 avg rt, 0% failures
+16:27:38 INFO: Current: 1 vu	2 succ	0 fail	0.718 avg rt	/	Cumulative: 0.881 avg rt, 0% failures
+16:27:39 INFO: Current: 1 vu	1 succ	0 fail	0.831 avg rt	/	Cumulative: 0.876 avg rt, 0% failures
+16:27:40 INFO: Current: 1 vu	1 succ	0 fail	0.654 avg rt	/	Cumulative: 0.856 avg rt, 0% failures
+16:27:41 INFO: Current: 1 vu	2 succ	0 fail	0.706 avg rt	/	Cumulative: 0.833 avg rt, 0% failures
+16:27:43 INFO: Current: 1 vu	1 succ	0 fail	0.588 avg rt	/	Cumulative: 0.816 avg rt, 0% failures
+16:27:44 INFO: Changed data analysis delay to 2s
+16:27:44 INFO: Current: 1 vu	1 succ	0 fail	0.811 avg rt	/	Cumulative: 0.769 avg rt, 0% failures
+16:27:45 INFO: Current: 1 vu	2 succ	0 fail	0.645 avg rt	/	Cumulative: 0.758 avg rt, 0% failures
+16:27:46 INFO: Current: 1 vu	1 succ	0 fail	1.094 avg rt	/	Cumulative: 0.772 avg rt, 0% failures
+16:27:48 INFO: Current: 1 vu	1 succ	0 fail	0.582 avg rt	/	Cumulative: 0.767 avg rt, 0% failures
+16:27:49 INFO: Current: 1 vu	2 succ	0 fail	0.673 avg rt	/	Cumulative: 0.760 avg rt, 0% failures
+16:27:50 INFO: Current: 1 vu	2 succ	0 fail	0.585 avg rt	/	Cumulative: 0.748 avg rt, 0% failures
+16:27:56 INFO: Changed data analysis delay to 3s
+16:27:56 INFO: Current: 1 vu	2 succ	0 fail	0.609 avg rt	/	Cumulative: 0.739 avg rt, 0% failures
+16:27:59 INFO: Changed data analysis delay to 4s
+16:27:59 INFO: Current: 1 vu	2 succ	0 fail	1.149 avg rt	/	Cumulative: 0.759 avg rt, 0% failures
+16:28:02 INFO: Changed data analysis delay to 6s
+16:28:02 INFO: Current: 1 vu	1 succ	0 fail	4.799 avg rt	/	Cumulative: 0.871 avg rt, 0% failures
+16:28:06 INFO: Current: 1 vu	1 succ	0 fail	2.813 avg rt	/	Cumulative: 0.924 avg rt, 0% failures
+16:28:09 INFO: Changed data analysis delay to 4s
+16:28:09 INFO: Current: 1 vu	1 succ	0 fail	0.735 avg rt	/	Cumulative: 0.935 avg rt, 0% failures
+16:28:10 INFO: Current: 1 vu	1 succ	0 fail	1.307 avg rt	/	Cumulative: 0.944 avg rt, 0% failures
+16:28:11 INFO: Current: 1 vu	1 succ	0 fail	1.020 avg rt	/	Cumulative: 0.946 avg rt, 0% failures
+16:28:14 INFO: Current: 1 vu	1 succ	0 fail	0.741 avg rt	/	Cumulative: 0.938 avg rt, 0% failures
+16:28:19 INFO: Current: 1 vu	1 succ	0 fail	1.247 avg rt	/	Cumulative: 0.946 avg rt, 0% failures
+16:28:58 INFO: Changed data analysis delay to 6s
+16:28:58 INFO: Current: 1 vu	1 succ	0 fail	2.588 avg rt	/	Cumulative: 0.997 avg rt, 0% failures
+16:28:59 WARNING: Please wait for graceful shutdown...
+16:28:59 INFO: Shutting down...
+16:28:59 INFO: Post-processing...
+16:28:59 INFO: Test duration: 0:01:43
+16:28:59 INFO: Samples count: 51, 0.00% failures
+16:28:59 INFO: Average times: total 1.829, latency 1.778, connect 0.111
+16:28:59 INFO: Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |         0.563 |
+|          50.0 |         0.778 |
+|          90.0 |         2.142 |
+|          95.0 |         4.796 |
+|          99.0 |        38.912 |
+|          99.9 |        38.912 |
+|         100.0 |        38.912 |
++---------------+---------------+
+16:28:59 INFO: Request label stats:
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| label                                                                       | status |    succ | avg_rt | error |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| http://production-alb-2141020178.us-east-1.elb.amazonaws.com/fibonacci?n=38 |   OK   | 100.00% |  1.829 |       |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+16:28:59 INFO: Test duration: 0:01:43
+16:28:59 INFO: Samples count: 51, 0.00% failures
+16:28:59 INFO: Average times: total 1.829, latency 1.778, connect 0.111
+16:28:59 INFO: Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |         0.563 |
+|          50.0 |         0.778 |
+|          90.0 |         2.142 |
+|          95.0 |         4.796 |
+|          99.0 |        38.912 |
+|          99.9 |        38.912 |
+|         100.0 |        38.912 |
++---------------+---------------+
+16:28:59 INFO: Request label stats:
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| label                                                                       | status |    succ | avg_rt | error |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| http://production-alb-2141020178.us-east-1.elb.amazonaws.com/fibonacci?n=38 |   OK   | 100.00% |  1.829 |       |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+16:28:59 INFO: Dumping final status as CSV: result_1_256_1024.csv
+16:28:59 INFO: Artifacts dir: C:\ufmg\performance-test\tests\2021-03-21_16-27-08.697505
+16:28:59 INFO: Done performing with code: 0

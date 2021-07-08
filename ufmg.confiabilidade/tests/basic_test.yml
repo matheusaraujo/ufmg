@@ -1,0 +1,26 @@
+settings:
+  env:
+    BASE_URL: http://production-alb-2141020178.us-east-1.elb.amazonaws.com
+    N1: 38
+    CPU: 256
+    MEM: 1024
+    CONCURRENCY: 1
+    
+reporting:
+  - module: final-stats
+    summary: true
+    percentiles: true
+    failed-labels: false
+    test-duration: true
+    dump-csv: result_${CONCURRENCY}_${CPU}_${MEM}.csv
+
+execution:
+  - concurrency: ${CONCURRENCY}
+    ramp-up: 10s
+    hold-for: 50s
+    scenario: fibonacci-test
+  
+scenarios:
+  fibonacci-test:
+    requests:
+      - ${BASE_URL}/fibonacci?n=${N1}

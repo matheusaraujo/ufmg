@@ -1,0 +1,60 @@
+15:54:58 INFO: Taurus CLI Tool v1.15.2
+15:54:58 INFO: Starting with configs: ['basic_test.yml']
+15:54:58 INFO: Configuring...
+15:54:58 INFO: Artifacts dir: C:\ufmg\performance-test\tests\2021-03-21_15-54-58.970694
+15:54:59 INFO: Preparing...
+15:55:07 WARNING: Thread group detection: plugin for ConcurrentThreadGroup not found, regular ThreadGroup will be used
+15:55:07 WARNING: Failed to detect plugins for C:\ufmg\performance-test\tests\2021-03-21_15-54-58.970694\modified_requests.jmx: [WinError 2] O sistema não pode encontrar o arquivo especificado
+15:55:07 INFO: Starting...
+15:55:07 INFO: Waiting for results...
+15:55:57 INFO: Changed data analysis delay to 19s
+15:56:06 INFO: Changed data analysis delay to 64s
+15:56:06 INFO: Current: 1 vu	1 succ	0 fail	9.564 avg rt	/	Cumulative: 9.564 avg rt, 0% failures
+15:56:17 WARNING: Please wait for graceful shutdown...
+15:56:17 INFO: Shutting down...
+15:56:17 INFO: Post-processing...
+15:56:17 INFO: Test duration: 0:01:10
+15:56:17 INFO: Samples count: 4, 0.00% failures
+15:56:17 INFO: Average times: total 15.364, latency 15.363, connect 0.204
+15:56:17 INFO: Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |          9.52 |
+|          50.0 |          9.56 |
+|          90.0 |        32.016 |
+|          95.0 |        32.016 |
+|          99.0 |        32.016 |
+|          99.9 |        32.016 |
+|         100.0 |        32.016 |
++---------------+---------------+
+15:56:17 INFO: Request label stats:
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| label                                                                       | status |    succ | avg_rt | error |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| http://production-alb-2141020178.us-east-1.elb.amazonaws.com/fibonacci?n=38 |   OK   | 100.00% | 15.364 |       |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+15:56:17 INFO: Test duration: 0:01:10
+15:56:17 INFO: Samples count: 4, 0.00% failures
+15:56:17 INFO: Average times: total 15.364, latency 15.363, connect 0.204
+15:56:17 INFO: Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |          9.52 |
+|          50.0 |          9.56 |
+|          90.0 |        32.016 |
+|          95.0 |        32.016 |
+|          99.0 |        32.016 |
+|          99.9 |        32.016 |
+|         100.0 |        32.016 |
++---------------+---------------+
+15:56:17 INFO: Request label stats:
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| label                                                                       | status |    succ | avg_rt | error |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+| http://production-alb-2141020178.us-east-1.elb.amazonaws.com/fibonacci?n=38 |   OK   | 100.00% | 15.364 |       |
++-----------------------------------------------------------------------------+--------+---------+--------+-------+
+15:56:17 INFO: Dumping final status as CSV: result_1_256_512.csv
+15:56:17 INFO: Artifacts dir: C:\ufmg\performance-test\tests\2021-03-21_15-54-58.970694
+15:56:17 INFO: Done performing with code: 0
