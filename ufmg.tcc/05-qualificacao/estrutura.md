@@ -1,0 +1,14 @@
+- **Motivação**
+  - Que problema será resolvido por este trabalho?
+  - Por quê este problema é importante?
+  - Que benefícios serão atingidos com a realização deste trabalho?
+  - _Os objetivos do trabalho foram apresentados de forma clara e são compatíveis com as respostas às perguntas chave?_
+- **Escopo**
+  - Revisão bibliográfica
+  - Principais conceitos relevantes para o seu desenvolvimento.
+  - Trabalhos anteriores sobre o tema ou temas correlatos
+  - Situou a sua proposta em relação a esses outros trabalhos
+- **Metodologia e cronograma**
+  - A metodologia e o cronograma de desenvolvimento do TCC2 foram apresentados de maneira adequada?
+- **Humanidades**
+  - Aspectos sociais, econômicos, ambientais,  culturais, etc.

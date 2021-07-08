@@ -1,0 +1,161 @@
+digraph G {
+
+  rankdir = TD;
+  
+  node [shape = circle]
+
+  // periodo 01
+  subgraph cluster_01 {
+    label = "periodo01";
+    DCC203;
+    ELE629;
+    MAT001;
+    MAT038;
+  }
+  
+  // periodo 02
+  subgraph cluster_02 {
+    label = "periodo02";
+    DCC033;
+    DCC204;
+    ELT124;
+    FIS065;
+    MAT039;
+  }
+  
+  // periodo 03
+  subgraph cluster_03 {
+    label = "periodo03";
+    ELE064;
+    ELE078;
+    FIS069;
+    FIS152;
+    MAT002;
+    MAT015;
+  }
+  
+  // periodo 04
+  subgraph cluster_04 {
+    label = "periodo04";
+    DCC205;
+    ELE065;
+    ELT029;
+    EST031;
+    FIS086;
+    MAT016;
+  }
+
+  // periodo 05
+  subgraph cluster_05 {
+    label = "periodo05"
+    ELE079;
+    ELE092;
+    ELT075;
+    ELT123;
+    ELT125;
+    EMA255;
+  }
+
+  // periodo 06
+  subgraph cluster_06 {
+    label = "periodo06";
+    ELE080;
+    ELE081;
+    ELE082;
+    ELE156;
+    ELT126;
+  }
+
+  // periodo 07
+  subgraph cluster_07 {
+    label = "periodo07";
+    DCC023;
+    EEE017;
+    ELE077;
+    ELE084;
+    ELT079;
+  }
+
+  // periodo 08
+  subgraph cluster_08 {
+    label = "periodo08";
+    ELE042;
+    ELE075;
+    ELE083;
+    ELE086;
+    ELE088;
+    ELT016;
+    ELT080;
+  }
+
+  // periodo 09
+  subgraph cluster_09 {
+    label = "periodo09";
+    ELE087;
+    ELE094;
+  }
+
+  // periodo 10
+  subgraph cluster_10 {
+    label = "periodo10";
+    EEE018;
+  }
+
+  // periodo 11
+  subgraph cluster_11 {
+    label = "periodo11";
+    EEE019;
+  }
+
+  // periodo 12
+  subgraph cluster_12 {
+    label = "periodo12";
+    EEE020;
+  }
+  
+  DCC203 -> DCC033;
+  MAT038 -> DCC033;
+  DCC203 -> DCC204;
+  MAT001 -> MAT039;
+  MAT038 -> MAT039;
+  DCC204 -> ELE078;
+  FIS065 -> FIS069;
+  MAT039 -> FIS069;
+  FIS065 -> FIS152;
+  MAT001 -> FIS152;
+  MAT039 -> MAT002;
+  MAT039 -> MAT015;
+  DCC204 -> DCC205;
+  ELE064 -> ELE065;
+  MAT015 -> ELE065;
+  ELT124 -> ELT029;
+  FIS069 -> FIS086;
+  MAT039 -> MAT016;
+  FIS069 -> ELE079;
+  DCC204 -> ELT075;
+  MAT015 -> ELT075;
+  EST031 -> ELT075;
+  ELE078 -> ELE080;
+  ELE092 -> ELE081;
+  MAT015 -> ELE082;
+  ELE065 -> ELE156;
+  ELT125 -> ELT126;
+  DCC204 -> DCC023;
+  EST031 -> EEE017;
+  DCC033 -> ELE077;
+  MAT015 -> ELE077;
+  ELE081 -> ELE084;
+  ELT125 -> ELE042;
+  MAT015 -> ELE075;
+  ELE077 -> ELE083;
+  ELE084 -> ELE086;
+  ELE077 -> ELE088;
+  ELT125 -> ELT016;
+  ELT079 -> ELT080;
+  ELE086 -> ELE087;
+  EEE018 -> EEE019;
+  
+  ELE087 -> EEE018 [style = invis];
+  EEE018 -> EEE020 [style = invis];
+  
+}

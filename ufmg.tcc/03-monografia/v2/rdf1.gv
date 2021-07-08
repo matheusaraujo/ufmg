@@ -1,0 +1,9 @@
+digraph G {
+
+  rankdir = LR;
+  
+  sujeito [label = "Sujeito", color = green, style = filled];
+  objeto [label = "Objeto", color = yellow, style = filled, shape = box];
+  
+  sujeito -> objeto [label = "Predicado"]
+}

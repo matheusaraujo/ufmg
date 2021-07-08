@@ -1,0 +1,14 @@
+digraph G {
+
+    rankdir = LR;
+    
+    node [shape = circle];
+
+    A -> B;
+    A -> C;
+    B -> D;
+    C -> D;
+    D -> E;
+    
+    D -> A [color = blue];
+}

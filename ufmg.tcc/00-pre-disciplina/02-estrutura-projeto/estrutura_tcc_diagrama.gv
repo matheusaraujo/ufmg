@@ -1,0 +1,111 @@
+digraph G {
+
+  rankdir = TB;
+
+  graph [fontname = "helvetica"];
+  node [
+    fontname = "helvetica", 
+    shape = circle, 
+    style = filled, 
+    fillcolor = white, 
+    height=1.5, 
+    fixedsize=true
+  ];
+  edge [fontname = "helvetica"];
+
+  subgraph cluster_teoria_grafos {
+    style = filled;
+    fillcolor = "#a6cee3";    
+    label = "Teoria de Grafos";
+    fontsize = 28.0;
+    penwidth = 4;
+
+    subgraph cluster_teoria_grafos_definicoes {
+      penwidth = 2;
+      label = "Definições"
+      redesDeFluxo [label = "Redes\nde Fluxo", shape = box, width = 1.5, penwidth = 2];
+      componentesConexas [label = "Componentes\nConexas", shape = box, width = 1.5, penwidth = 2];
+      ordenacaoTopologica [label = "Ordenação\ntopológica", shape = box, width = 1.5, penwidth = 2];
+
+      redesDeFluxo -> componentesConexas [style = invis];
+      componentesConexas -> ordenacaoTopologica [style = invis];
+    }
+    
+    grauVertice [label="Grau"];
+    superGrauVertice [label = "Super Grau", fillcolor = snow4];
+    vertice [label = "Vértice", style=filled, fillcolor = white];
+    aresta [label = "Aresta", style=filled, fillcolor = white];
+    grafo [label = "Grafo", style=filled, fillcolor = white];
+    arestasMultiplas [label = "Arestas\nmúltiplas", fillcolor = snow3];
+    multiGrafo [label = "Multigrafo", penwidth = 3, fillcolor = "#1f78b4"];
+
+    grauVertice -> vertice [dir=none];
+    superGrauVertice -> vertice [dir=none, style = dashed];
+    vertice -> grafo;
+    aresta -> grafo;
+    aresta -> arestasMultiplas;
+    arestasMultiplas -> multiGrafo;
+    grafo -> multiGrafo;
+  }
+
+  subgraph cluster_pensamento_sistemico {
+    style = filled;
+    fillcolor = "#fb9a99";    
+    label = "Pensamento sistêmico";
+    fontsize = 28.0;
+    penwidth = 4;
+    
+    purpose [label = "Purpose"];
+    flow [label = "Flow"];
+    stock [label = "Stock"];
+    interconnections [label = "Interconnections"];    
+    elements [label = "Elements"];
+    system [label = "System", penwidth = 3,fillcolor = "#e31a1c"];
+    
+    elements -> system;
+    interconnections -> system;
+    flow -> system;
+    stock -> system;
+    purpose -> system;
+
+    subgraph cluster_pensamento_sistema_archetypes {
+      label = "Archetypes";
+      penwidth = 2;
+      successToSuccessfull [label = "Success to\nSuccessfull", shape = box, width = 1.5, penwidth = 2];
+      seekingTheWrongGoal [label = "Seeking the\nwrong goal", shape = box, width = 1.5, penwidth = 2];
+      driftToLowPerformance [label = "Drigt to Low\nPerformance", shape = box, width = 1.5, penwidth = 2];
+
+      successToSuccessfull -> seekingTheWrongGoal [style = invis];
+      seekingTheWrongGoal -> driftToLowPerformance [style = invis];
+    }
+  }
+
+  subgraph cluster_gestao_conhecimento {
+    style = filled;
+    fillcolor = "#b2df8a";    
+    label = "Gestão do\nConhecimento";
+    fontsize = 28.0;
+    penwidth = 4;
+
+    capacidade [label = "Capacidade"];
+    maturidade [label = "Maturidade"];
+    modelosMaturidade [label = "Modelos de\nmaturidade", penwidth = 3, fillcolor = "#33a02c"];
+
+    capacidade -> maturidade;
+    maturidade -> modelosMaturidade;    
+  }
+
+  maturidadeGrafo [
+    label = "Grafos de\nmaturidade", 
+    fontsize = 19.0;
+    penwidth = 3, 
+    shape = box, 
+    width = 1.5,
+    fillcolor = "#c6bda7";
+  ];    
+
+  multiGrafo -> maturidadeGrafo [penwidth = 3];
+  system -> maturidadeGrafo [penwidth = 3];
+  modelosMaturidade -> maturidadeGrafo [penwidth = 3];
+  
+}
